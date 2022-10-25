@@ -48,7 +48,7 @@ Exploratory Analysis was started by:
 
 This can be seen from the following image:
 
-![hist_allfeats.png](img/hist_allfeats.png)
+![hist_allfeats.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/hist_allfeats.png)
 
 
 2. The next step was performing the one-hot encoding of the categorical features, and adding the one-hot vectors to the dataset
@@ -60,19 +60,19 @@ Once the best set of hyperparameters were obtained from a Grid Search method, th
 4. `datetime` was then parsed to obtain the year, month, day and hour features. All of which gave some information:
     * `Year` let us identify that there was a yearly trend in the demand for bikes. This could be due to external factors, but there was a significant increase for demand in bikes in 2012 than in 2011. Since our testing data contains samples from 2011, it is safe to assume this will be a good predictor variable.
 
-    ![year_count.png](img/year_count.png)
+    ![year_count.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/year_count.png)
 
 
     * `Month` let us identify monthly or seasonal trends in bike demand. It was seen that demand sees a spike in the months from January to June. Then remains pretty constant, and decreases from October to December. This seasonal trend is also a powerful predictor
 
-    ![month_count.png](img/month_count.png)
+    ![month_count.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/month_count.png)
 
     * `Day` lets us identify the daily trends in bike demand over the 2 years. It needed to be processed a bit to identify weekdays from weekends. There was pretty much consistent demand throughout the week, except for Sunday. This makes sense because people who do not go to work or school on bikes will not be using it on Sundays.
     
     
     * `Hour` let us identify hourly trends in bike demand. It needed to again be binned into intervals because there isn't a direct linear relationship between `hour` and `count`. This non-linearity can however be modelled using Decision Trees. So like we did for `atemp`, we binned hour into separate categories wrt intervals. There was however a very clear indicator which was, hours from 7-10AM, 12-2PM, and 5-8PM were the times where most demand was seen. These are peak times when people are either leaving for work/school, or going to lunch, or returning from work/school. This is thus a very powerful predictor.
 
-    ![rushhour.png](img/rushhour.png)
+    ![rushhour.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/rushhour.png)
 
 
 5. `humidity` was seen as a pretty normally distributed continuous variable, and thus not much needed to be done there. It was just normalization using `min-max normalization` to have its values between 0 and 1.
@@ -93,11 +93,11 @@ Using the two above methods, it was seen that performing box cox transformation 
 
     The original count had a distribution like so:
 
-    ![count_original.png](img/count_original.png)
+    ![count_original.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/count_original.png)
 
     The transformed count had a distribution like so:
 
-    ![count_transformed.png](img/count_transformed.png)
+    ![count_transformed.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/count_transformed.png)
     
 This is to be expected also because, the metric used in the kaggle competition is the `RMSLE` which takes the root mean squared of the log errors. So if we can train our models on the log values, the loss function during training itself becomes the RMSLE; rather than training on actual values in which case the loss function is the RMSE.
 
@@ -146,11 +146,11 @@ Hyperparameter tuning was done in 2 ways:
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
-![model_train_score.png](img/model_train_score.png)
+![model_train_score.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/model_train_score.png)
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-![model_test_score.png](img/model_test_score.png)
+![model_test_score.png]https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/model_test_score.png)
 
 ## Summary
 In conclusion, this project deals with the exploration and analysis of bike demand data, and after performing extensive EDA and feature engineering, models were made using AutoGluon. Hyperparameter optimization was explored to get the best set of model parameters, and the best model scored `RMSLE = 0.512` on the Kaggle platform.  

@@ -21,8 +21,8 @@ Images or additional files needed to make your notebook or report complete can b
 ## Getting Started
 * Clone this template repository `git clone git@github.com:udacity/nd009t-c1-intro-to-ml-project-starter.git` into AWS Sagemaker Studio (or local development).
 
-<img src="img/sagemaker-studio-git1.png" alt="sagemaker-studio-git1.png" width="500"/>
-<img src="img/sagemaker-studio-git2.png" alt="sagemaker-studio-git2.png" width="500"/>
+<img src="https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/sagemaker-studio-git1.png" alt="sagemaker-studio-git1.png" width="500"/>
+<img src="https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/sagemaker-studio-git2.png" alt="sagemaker-studio-git2.png" width="500"/>
 
 * Proceed with the project within the [jupyter notebook](project-template.ipynb).
 * Visit the [Kaggle Bike Sharing Demand Competition](https://www.kaggle.com/c/bike-sharing-demand) page. There you will see the overall details about the competition including overview, data, code, discussion, leaderboard, and rules. You will primarily be focused on the data and ranking sections.
