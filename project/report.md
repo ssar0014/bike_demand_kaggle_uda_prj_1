@@ -26,9 +26,9 @@
 ### What was the top ranked model that performed?
 The top ranked models for all training were the weighted stack ensembles.
 
-1. For the initial model: WeightedEnsemble_L4 followed by WeightedEnsemble_L3 and CatBoost_BAG_L3
-2. For the model with feature engineering: 
-3. For the model with feature engineering and hpo: 
+1. For the initial model: `WeightedEnsemble_L4` followed by `WeightedEnsemble_L3` and `CatBoost_BAG_L3`
+2. For the model with feature engineering: `WeightedEnsemble_L3` followed by `ExtraTreesMSE_BAG_L2` and `WeightedEnsemble_L4`
+3. For the model with feature engineering and hpo: `WeightedEnsemble_L3` followed by `XGBoost_BAG_L2/T3` and `LightGBM_BAG_L2/T3`
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
