@@ -150,7 +150,7 @@ Hyperparameter tuning was done in 2 ways:
 
 ### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
-![model_test_score.png]https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/model_test_score.png)
+![model_test_score.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/model_test_score.png)
 
 ## Summary
 In conclusion, this project deals with the exploration and analysis of bike demand data, and after performing extensive EDA and feature engineering, models were made using AutoGluon. Hyperparameter optimization was explored to get the best set of model parameters, and the best model scored `RMSLE = 0.512` on the Kaggle platform.  
