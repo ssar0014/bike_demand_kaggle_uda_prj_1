@@ -145,11 +145,7 @@ Hyperparameter tuning was done in 2 ways:
 
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
-|initial|default vals|default vals|default vals|1.77112|
-|new features|[auto_stack = True, num_bag_folds = 5, num_bag_sets = 2]|default vals|default vals|0.52900|
-|new features BCT w/ hpo|[num_bag_folds = 5, num_bag_sets = 2, {Torch Neural Network: num_epochs=50, learning_rate=(3e-4 to 1e-2),dropout_prob=(0.5 to 1)}]|[LightGBM: {learning_rate: 3e-4 to 0.3, num_boost_round: 1000, num_leaves: 26 to 66, max_depth:3 to 10]|[XGBoost: {n_estimators:1000, learning_rate: 1e-4 to 3e-1, colsample_bytree: 1e-4 to 1, lambda: 1e-4 to 1}]|0.52384|
-|log count w/ hpo|[num_bag_folds = 5, num_bag_sets = 2, {Torch Neural Network: num_epochs=50, learning_rate=(3e-4 to 1e-2),dropout_prob=(0.5 to 1)}]|[LightGBM: {learning_rate: 3e-4 to 0.3, num_boost_round: 1000, num_leaves: 26 to 66, max_depth:3 to 10]|[XGBoost: {n_estimators:1000, learning_rate: 1e-4 to 3e-1, colsample_bytree: 1e-4 to 1, lambda: 1e-4 to 1}]|0.51700|
+![hyperparameter_table.png](https://github.com/ssar0014/bike_demand_kaggle_uda_prj_1/blob/main/project/img/hyperparameter_table.png)
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
